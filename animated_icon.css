@@ -16,13 +16,30 @@ body{
     background-color: #ebebf6;
 }
 
+.shapes{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.first-shape{
+    height: 206px;
+    width: 206px;
+    border-radius: 102px;
+    background: linear-gradient(145deg, #d4d4dd, #fbfbff);
+    box-shadow:  36px 36px 72px #e9e9f4,-36px -36px 72px #ededf8;
+}
+
 .socials-container{
     display: flex;
     gap: 20px;
     padding: 20px;
     border-radius: 20px;
-    background-color: #cacaf1;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 97px;
+    background: linear-gradient(145deg, #fbfbff, #d4d4dd);
+    box-shadow:  14px 14px 38px #c8c8d1,
+    -14px -14px 38px #ffffff;
 }
 
 .socials-container a{
