@@ -16,7 +16,18 @@ body{
     background-color: #ebebf6;
 }
 
+.background-blur{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    
+}
+
 .shapes{
+    justify-content: center;
+    justify-items: center;
+    place-items: center;
     z-index: -1;
     position: absolute;
     height: 100%;
@@ -24,10 +35,12 @@ body{
 }
 
 .first-shape{
+    margin-left: 200px;
+    margin-top: 200px;
     height: 206px;
     width: 206px;
     border-radius: 102px;
-    background: linear-gradient(145deg, #d4d4dd, #fbfbff);
+    background: linear-gradient(145deg, #d4d4dd, #e49eb0);
     box-shadow:  36px 36px 72px #e9e9f4,-36px -36px 72px #ededf8;
 }
 
@@ -37,9 +50,11 @@ body{
     padding: 20px;
     border-radius: 20px;
     border-radius: 97px;
-    background: linear-gradient(145deg, #fbfbff, #d4d4dd);
-    box-shadow:  14px 14px 38px #c8c8d1,
-    -14px -14px 38px #ffffff;
+    border: 1px solid #fff;
+    backdrop-filter: blur(10px);
+    /* background: linear-gradient(145deg, #fbfbff, #d4d4dd); */
+    /* box-shadow:  14px 14px 38px #c8c8d1,
+    -14px -14px 38px #ffffff; */
 }
 
 .socials-container a{

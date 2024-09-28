@@ -7,6 +7,7 @@
     <title>animated icon</title>
 </head>
 <body>
+    <div class="background-blur"></div>
     <div class="shapes">
         <div class="first-shape"></div>
         <div class="second-shape"></div>
@@ -21,10 +22,39 @@
     </div>
     <script src="node_modules/animejs/lib/anime.js" ></script>
     <script>
+
+anime({
+  targets: '.first-shape',
+  translateX: [
+    { value: 900, duration: 5000, delay: 100 },
+    { value: 0, duration: 5000, delay: 500 }
+  ],
+  translateY: [
+    { value: -200, duration: 900 },
+    { value: 200, duration: 900, delay: 1000 },
+    { value: 0, duration: 500, delay: 1000 }
+  ],
+  scaleX: [
+    { value: 2, duration: 100, delay: 500, easing: 'easeOutExpo' },
+    { value: 1, duration: 500 },
+    { value: 2, duration: 100, delay: 500, easing: 'easeOutExpo' },
+    { value: 1, duration: 900 }
+  ],
+  scaleY: [
+    { value: [1.75, 1], duration: 3000 },
+    { value: 2, duration: 200, delay: 1200, easing: 'easeOutExpo' },
+    { value: 1, duration: 5000 },
+    { value: 1.75, duration: 200, delay: 1200, easing: 'easeOutExpo' },
+    { value: 1, duration: 5000 }
+  ],
+  easing: 'easeOutElastic(1, .5)',
+  loop: true
+});
+
         anime({
             targets: 'a',
-            translateX: [-300, 0],
-            duration: 1500,
+            translateX: [-700, 0],
+            duration: 2000,
             rotate: '2turn'
          });
 
